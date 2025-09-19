@@ -1,4 +1,4 @@
-#herencia
+#sobreescritura
 
 class Animal: 
     def comer(self):
@@ -13,6 +13,10 @@ class Perro(Animal):
     def hacer_sonido(self):
         print('Puedo ladrar')
 
+    #Sobreescritura del metodo dormir
+    def dormir(self):
+        print ('Duermo 15 horas al día') #"definimos comportamiento"
+
 #Programa principal
 print('*** Ejemplo de Herencia en Python ***')
 print('Clase Padre, soy un Animal')
@@ -23,5 +27,5 @@ animal1.dormir()
 print('\nClase Hija, soy un perro')
 perro1 = Perro()
 perro1.comer()
-perro1.dormir()
+perro1.dormir() #Se llama el metodo sobreescrito de la clase hija
 perro1.hacer_sonido()
